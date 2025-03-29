@@ -36,8 +36,8 @@ nav {
 }
 
 #search-input {
-    max-width: 400px;
-    padding: 10px 20px;
+    max-width: 300px;
+    padding: 10px 15px;
     border: none;
     border-radius: 5px;
     font-size: 18px;
@@ -52,10 +52,14 @@ nav {
     font-size: 18px;
     cursor: pointer;
     border-radius: 5px;
-    margin-left: 10px;
+    margin-left: 5px;
 
 }
 
+#search-container {
+    display: flex;
+    align-items: center;
+}
 #blog-container {
     padding: 3rem 0;
     display: flex;

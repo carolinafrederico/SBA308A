@@ -1,3 +1,4 @@
+
 const apiKey = '7ba4a580810a4bde8575f8bdd4205c7d'
 
 const blogContainer = document.getElementById("blog-container");
@@ -12,8 +13,8 @@ async function fetchRandomNews() {
         return data.articles;
 
     } catch (error) {
-        console.error("Error fetching random news", error)
-        return []
+        console.error("Error fetching random news", error);
+        return
 
     }
 }
@@ -33,7 +34,7 @@ searchButton.addEventListener("click", async () =>{
 
 async function fetchNewsQuery (query){
     try {
-        const apiUrl = `https://newsapi.org/v2/everything?q=${query}&pageSize=12&apiKey=${apiKey}`;
+        const apiUrl = `https://newsapi.org/v2/everything?q=${query}&pageSize=8&apiKey=${apiKey}`;
         const response = await fetch(apiUrl);
         const data = await response.json();
         return data.articles;
@@ -53,7 +54,7 @@ function displayBlogs(articles) {
         img.src = article.urlToImage;
         img.alt = article.title;
         const title = document.createElement("h2");
-        const truncatedTitle = article.title.length > 51 ? article.title.slice(0, 51) + "..." : article.title;
+        const truncatedTitle = article.title.length > 50 ? article.title.slice(0, 50) + "..." : article.title;
         // title.textContent = article.title;
         title.textContent = truncatedTitle;
         const description = document.createElement("p");

@@ -1,7 +1,9 @@
 // In the file where the fetchSidebarData function is defined
+const apiKey2 = 'bd1849c6a5804a0a9dc231607253003'
+
 export async function fetchSidebarData() {
     try {
-        const response = await fetch('/api/v2/facts/random'); 
+        const response = await fetch('http://api.weatherapi.com/v1'); 
         const data = await response.json();
         
         const sidebarContent = document.getElementById('sidebar-content');

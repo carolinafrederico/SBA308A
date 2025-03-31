@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>News Api Project</title>
+    <title>News From Around The World</title>
 </head>
+
 <body>
-    
+
     <nav>
         <div class="navbar obj-width">
             <a class="logo" href="index.html">News from around the World.</a>
-            <div class="search-container"></div>
+            <div class="search-container">
                 <input type="text" placeholder="Search news here" id="search-input">
                 <button id="search-button">Search</button>
+            </div>
         </div>
     </nav>
-    <section>
-        <div id = "header">
-            <h1>What is news for you?</h1>
-            <p>Use the search box to browse for news from different media venues, such as NY Times and Associated Press. You can searcn by query or using the name of a specific location or person. Give it a try!</p>
-        </div>
-    </section>
 
-    <main id="blog-container" class="obj-width">
-        <div class="blog-card">
-            <img src="https://placehold.co/600x400" alt="">
-            <h2>This is a title</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus nostrum neque expedita ut, nam id tempora quod ex porro consequatur!</p>
-        </div>
-        <div class="blog-card">
-            <img src="https://placehold.co/600x400" alt="">
-            <h2>This is a title</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus nostrum neque expedita ut, nam id tempora quod ex porro consequatur!</p>
-        </div>
-        <div class="blog-card">
-            <img src="https://placehold.co/600x400" alt="">
-            <h2>This is a title</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus nostrum neque expedita ut, nam id tempora quod ex porro consequatur!</p>
-        </div>
-        <div class="blog-card">
-            <img src="https://placehold.co/600x400" alt="">
-            <h2>This is a title</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus nostrum neque expedita ut, nam id tempora quod ex porro consequatur!</p>
-        </div>
+    <div id="topper">
+        <h1>What is news for you?</h1>
+        <p>Use the search box to browse for news from different media venues, such as NY Times and Associated Press. You
+            can search by query or using the name of a specific location or person. Give it a try!</p>
+    </div>
 
+    <div class="content-wrapper">
+        <main id="blog-container" class="obj-width">
+            <div class="blog-card">
+                <img src="https://placehold.co/600x400" alt="">
+                <h2>This is a title</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus nostrum neque expedita ut, nam
+                    id tempora quod ex porro consequatur!</p>
+            </div>
+            <div class="blog-card">
+                <img src="https://placehold.co/600x400" alt="">
+                <h2>This is a title</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus nostrum neque expedita ut, nam
+                    id tempora quod ex porro consequatur!</p>
+            </div>
+            <div class="blog-card">
+                <img src="https://placehold.co/600x400" alt="">
+                <h2>This is a title</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus nostrum neque expedita ut, nam
+                    id tempora quod ex porro consequatur!</p>
+            </div>
+            <div class="blog-card" data-url="https://example.com/full-article">
+                <img src="https://placehold.co/600x400" alt="News Image">
+                <h2>This is a title</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus nostrum neque expedita ut, nam id tempora quod ex porro consequatur!</p>
+                <button class="read-more">Read More</button>
+            </div>
+            <div id="sidebar">
+                <h4>This is a title</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error soluta, perspiciatis libero possimus
+                    quo et dolore blanditiis fuga iure modi nemo ut vitae eaque doloremque eius incidunt ab inventore
+                    iusto.</p>
+            </div>
+    </div>
     </main>
 
 
     <script src="script.js"></script>
 </body>
+
 </html>

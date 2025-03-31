@@ -14,7 +14,7 @@ body {
 
 /* Navigation */
 nav {
-    background-color: #34495E; /* Dark blue for a serious tone */
+    background-color: #827d53; /* Dark blue for a serious tone */
     box-shadow: 0 7px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -46,13 +46,13 @@ nav {
 
 #search-button {
     padding: 10px 20px;
-    background-color: #5D6D7E; /* Muted steel blue for button */
+    background-color: #757e61; /* Muted steel blue for button */
     color: #fff;
     border: none;
     font-size: 18px;
     cursor: pointer;
     border-radius: 5px;
-    margin-left: -155px;
+    margin-left: 5px;
 }
 
 #search-container {
@@ -61,18 +61,27 @@ nav {
 }
 
 /*Header Info*/
-#header {
-    
-    justify-content: center;
-    /* align-items: center;
-    align-content: center; */
-    padding: 60px 30px, 20px, 20px
+
+
+#topper {
+    justify-items: center;
+    padding: 20px 150px 5px 150px; 
+    /* font-size: larger; */
+    font-style: italic;
+    background-color: rgba(206, 202, 202, 0.885);
+}
+#topper p {
+    justify-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 23px;
+
 }
 /* Blog Section */
 #blog-container {
-    padding: 3rem 0;
+    padding: 1rem 3rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: first baseline;
     flex-wrap: wrap;
 }
@@ -115,6 +124,39 @@ nav {
     color: #8E44AD; /* Highlight title color when hovered */
 }
 
+/*Sidebar */
+
+#sidebar {
+    display: flex;
+    width: 250px;
+    padding: 15px;
+    background-color: #ECF0F1;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #3498DB; /* Blue color */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.read-more:hover {
+    background-color: #2C3E50; /* Darker blue */
+}
+
 /* Mobile Responsiveness */
 @media(max-width: 500px) {
     nav {
@@ -132,6 +174,16 @@ nav {
 
     .blog-card {
         width: 100%;
+    }
+}
+@media(max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    #sidebar {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
     }
 }
 

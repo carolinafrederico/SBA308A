@@ -1,4 +1,4 @@
-
+// import { fetchSidebarData } from "./api.js";
 const apiKey = '7ba4a580810a4bde8575f8bdd4205c7d'
 
 const blogContainer = document.getElementById("blog-container");
@@ -99,6 +99,11 @@ function displayBlogs(articles) {
 
     });
 }
+// Call fetchSidebarData when DOM content is loaded
+// document.addEventListener("DOMContentLoaded", () => {
+//     fetchSidebarData(); // Fetch and render sidebar data
+//     existing DOMContentLoaded logic for Read More button
+// });
 
 (async () => {
     try {
@@ -110,3 +115,4 @@ function displayBlogs(articles) {
 
     }
 })();
+
